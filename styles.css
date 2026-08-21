@@ -44,6 +44,7 @@ body {
   text-decoration: none;
   margin-left: 35px;
   border-bottom: 2px solid transparent;
+  box-sizing: border-box;
 }
 
 .topmenu button {
@@ -84,6 +85,7 @@ a:hover {
   margin-top: 150px;
   border-radius: 6px;
   transition: ease 1s;
+  box-sizing: border-box;
 }
 
 #about-me:hover {
@@ -228,9 +230,16 @@ p {
 }
 
 
-@media screen and (max-width: 700px) {
+@media (min-width:300px) and (max-width: 700px) {
   .container, .top-menu, #about-me, #skills, #projects, footer {   
     flex-direction: wrap;
+    box-sizing:border-box;
+  }
+}
+
+@media (min-width:300px) {
+  .topmenu {
+    display: inline-block;
   }
 }
 
