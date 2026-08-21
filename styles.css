@@ -238,8 +238,10 @@ p {
 }
 
 @media (min-width:300px) {
-  .topmenu {
-    display: inline-block;
+  .block {
+    margin: 10px;
+    width: fit-content;
+    height: fit-content;
   }
 }
 
@@ -255,7 +257,8 @@ p {
   }
 }
 
-.view {
+.view, .block {
+  box-sizing: border-box;
 }
 
 #temp {
