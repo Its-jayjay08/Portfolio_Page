@@ -21,7 +21,7 @@
 <a href="#about-me" class="nav-link">About me</a>
 
 
-<a href="#projects" class="nav-link">Projects</a>
+<a href="/projects.html" class="nav-link">Projects</a>
 
 
 <a href="#skills" class="nav-link">Experience</a>
@@ -76,26 +76,32 @@ contributions in a collaborative environment.
 <div id="projects">
 <h2>Projects :</h2>
 <section class="cards">
+    <div class="front"></div>
 <img src="https://img.icons8.com/?size=100&id=103819&format=png&color=000000" alt="pencil">
-<h3>✔️ Brand identity</h3>
-<p>Created a personnal blog page or website with multipages interconnected using html, css, javascript and phpmyadmin<br>
-to manage the databe with sql. 
-the website has a landing page, a serachbar and<br> request section.</p><br>
+<h3>✔️ Personal work</h3>
+<p>These are various previous personal work that i achieved during my free time<br>
+but there are also some school homeworks mixed together as well using software<br>
+like photoshop, illustrator and blender for 3D rendering and animation.<br>
+<br><span style="color: orangered; font-weight: bold;">Check-Me!</span></p>
 </section>
 
 <section class="cards">
+    <div class="front"></div>
 <img src="https://img.icons8.com/?size=100&id=43435&format=png&color=000000" alt="paint">
-<h3>✔️ Flappy Bird type Game</h3>
-<p>Build a flappy bird type game using javascript for personnal improvement and enjoyment.<br>
- It tought me how to create a game from scratch and also deepen
-my knowledge and learning of javascript. </p>
+<h3>✔️ Memory Game</h3>
+<p>Creating a memory type game using Vanilla js for my own personnal improvement and enjoyment.<br>
+Taught me how to create a game from scratch and also deepen my knowledge and learning of the<br>
+programming language.<br>
+<br><span style="color: orangered; font-weight: bold;">Check-Me!</span></p>
 </section>
 
 <section class="cards">
+    <div class="front"></div>
 <img src="https://img.icons8.com/?size=100&id=104115&format=png&color=000000" alt="a working man">
 <h3>✔️ Website creation</h3>
-<p>Designed a styled multipage website using wordpress that displays
-clothes, shoes and many other articles and accessories for men and women. </p>
+<p>Created a personnal blog page or website with multipages interconnected using html, css, javascript<br>
+and PhpMyadmin to manage the database with SQL. the website has a landing page, a serachbar and<br>
+<br><span style="color: orangered; font-weight: bold;">Check-Me!</span></p>
 </section>
 </div>
 
@@ -120,25 +126,17 @@ clothes, shoes and many other articles and accessories for men and women. </p>
 </section>
 </div>
 
-<button id="openModal">Pop!</button>
-
-<div class="modal" id="modal">
-    <div class="inner-modal">
-        <h2>Wanna know me!?</h2>
-        <p>
-            just wanted to let you know that<br>
-            i speak different languages so don't<br>
-            hesitate to reach out.
-        </p>
-        <button id="closeModal">Close</button>
+<script src="script.js"></script>
+<dialog id="recommend_btn">
+<p>Check the Project Navbar!</p>
+<button onclick="document.getElementById('recommend_btn').remove()">Fermer</button>
+</dialog>
+<button onclick="document.getElementById('recommend_btn').showModal()">Pop-up</button>
     </div>
 </div>
 
 <script src="script.js"></script>
 
-
-<footer>copyright.2026<br><strong>joanna.ndinga@gmail.com</strong></footer>
-
-
+    <footer>copyright.2026<br><strong>joanna.ndinga@gmail.com</strong></footer>
 </body>
 </html>

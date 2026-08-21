@@ -71,7 +71,7 @@ a:hover {
   background-image: url(profile_image.jpeg);
   background-position: top center;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size:cover;
   position: relative;
   border: 2px solid rgba(255, 255, 255, .2);
   padding: 100px;
@@ -206,14 +206,18 @@ p {
 .cards {
   background-color: rgba(255, 255, 255, .1);
   border: 2px solid rgba(255, 255, 255, .2);
+  flex-wrap: wrap;
+  justify-content: center;
   border-radius: 5px;
-  padding: 30px 10px 30px 10px;
-  margin: 50px 100px 50px 100px;
+  padding: 30px 30px 30px 30px;
+  margin: 30px 60px 30px 60px;
   transition: ease 1s;
 }
 
+
 .cards:hover {
-  transform: scale(1.01);
+  cursor: pointer;
+  transform: scale(1.03);
   border: 1px solid orangered;
 }
 
@@ -222,6 +226,36 @@ p {
   .container, .top-menu, #about-me, #skills, #projects, footer {   
     flex-direction: wrap;
   }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    scale: 0.5;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+.view {
+}
+
+#temp {
+  text-align: center;
+  background-color: rgba(255, 255, 255, .1);
+  border: 1px solid rgba(255, 255, 255, .2);
+  border-radius: 5px;
+  padding: 30px;
+}
+
+.block {
+  animation: appear 5s linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+  margin: 100px;
+  padding: 5px;
 }
 
 #submit {
@@ -286,10 +320,11 @@ p {
 
 
 .skills-tag:hover {
+  cursor: pointer;
   backdrop-filter: blur(10px);
   border: 1px solid white;
   transform: scale(1.05);
-  box-shadow: 3px 6px 6px 3px orangered;
+  box-shadow: 3px 6px 6px 3px rgb(255, 69, 0);
 }
 
 .skills-tag h3 {
@@ -358,12 +393,20 @@ footer {
   padding: 60px;
 }
 
-#recommend_btn.close {
-  display: block !important;
-}
-
 #recommend_btn {
   display: flex;
    position: fixed;
   justify-content: center;
+  background-color: rgba(255, 255, 255, .1);
+  border: 2px solid rgb(255, 69, 0);
+  padding: 60px;
+  border-radius: 5px;
+  text-align: center;
+  color: rgb(255, 69, 0);
+  font-family: "Quicksand", sans-serif;
+  font-size: 13px;
+}
+
+#recommend-btn p {
+  color: rgb(255, 69, 0);
 }
