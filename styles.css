@@ -1,0 +1,369 @@
+/* Your styles here */
+
+#profil {
+  position:fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  background-color: rgba(255, 255, 255, .1);
+  border: 2px solid rgba(255, 255, 255, .2);
+  font-family: "Quicksand", sans-serif;
+  backdrop-filter: blur(8px);
+}
+
+button {
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  background-color:  rgb(127, 11, 215);
+  margin-right: 10px;
+  transition: ease 1s;
+}
+
+button:hover {
+  transform: scale(1.01);
+  background-color: rgba(255, 255, 255, .1);
+  border: 2px solid rgba(255, 255, 255, .2);
+  color: orangered;
+}
+
+body {
+  background-color: #02044a;
+}
+
+.topmenu {
+  font-size: 18px;
+  color: whitesmoke;
+  text-decoration: none;
+  margin-left: 35px;
+  border-bottom: 2px solid transparent;
+}
+
+a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-weight: bold;
+  font-family: "Quicksand", sans-serif;
+  font-size: 14px;
+  padding: 8px 30px 8px 30px;
+  transition: ease-in 1s;
+}
+
+a:hover {
+  color: orangered;
+  text-decoration: none;
+  font-weight: bold;
+  transform: scale(1.05);
+}
+
+#header-img {
+  padding-left: 5px;
+  margin-bottom: -110px;
+}
+
+#about-me {
+  color: whitesmoke;
+  background-image: url(profile_image.jpeg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative;
+  border: 2px solid rgba(255, 255, 255, .2);
+  padding: 100px;
+  margin-top: 150px;
+  border-radius: 6px;
+  transition: ease 1s;
+}
+
+#about-me:hover {
+  transform: scale(1.01);
+  background-color:  rgba(255, 255, 255, .1);
+  border: 1px solid white ;
+}
+
+
+h1 {
+  font-family:"Quicksand", sans-serif;
+  font-size: 32px;
+  color: whitesmoke;
+}
+
+h2 {
+  margin-top: 80px;
+  margin-bottom: 50px;
+  font-family:"Quicksand", sans-serif;
+  font-size: 32px;
+  text-align: center;
+  color: whitesmoke;
+}
+
+p {
+  font-family:"Quicksand", sans-serif;
+  color: whitesmoke;
+  font-size: 15px;
+}
+
+
+#recommendation {
+  background-color: rgba(255, 255, 255, .1);
+  border: 2px solid rgba(255, 255, 255, .2);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.recommendation-tag {
+  justify-content: center;
+  align-items: center;
+  color: whitesmoke;
+  background-color:  rgba(255, 255, 255, .1);
+  padding: 10px 30px 10px 30px;
+  margin: 10px 700px 10px 700px;
+  border-radius: 30px;
+  font-family: "Quicksand", sans-serif;
+  transition: ease 1s;
+}
+
+.recommendation-tag:hover {
+  transform: scale(1.01);
+  background-color: rgba(255, 255, 255, .1);
+  border: 1px solid orangered;
+  backdrop-filter: blur(8px);
+}
+
+.recommendation-tag h1 {
+  text-align: center;
+}
+
+.personal-info {
+  border-radius: 10px;
+  border:2px solid rgba(255, 255, 255, .2);
+  padding: 7px 60px 7px 60px;
+}
+
+.personal-info:focus {
+  background-color: plum;
+}
+
+#text {
+  border:2px solid rgba(255, 255, 255, .2);
+  border-radius: 10px;
+}
+
+#text:focus {
+  background-color: plum;
+}
+
+
+.btn {
+  border-radius: 30px;
+  border:2px solid rgba(255, 255, 255, .2);
+  padding: 10px 100px 10px 100px;
+  margin-top: 10px;
+  color: whitesmoke;
+  font-weight: bold;
+  background-color:  rgb(127, 11, 215);
+  transition: ease-in 1s;
+}
+
+.btn:hover {
+  cursor: pointer;
+  transform: scale(1.01);
+  background-color: rgba(255, 255, 255, .1);
+  border: 2px solid rgba(255, 255, 255, .2);
+  color: orangered;
+}
+
+.btn-select {
+  margin: 50px 0 50px 0;
+}
+
+
+.recommendation-tag p {
+  color: whitesmoke;
+  font-family: "Quicksand", sans-serif;
+  font-size: 14px;
+}
+
+#projects.cards {
+  display: flex;
+  font-family:"Quicksand", sans-serif;
+  color: whitesmoke;
+  font-size: 26px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: underline 1px solid orangered;
+}
+
+.cards {
+  background-color: rgba(255, 255, 255, .1);
+  border: 2px solid rgba(255, 255, 255, .2);
+  border-radius: 5px;
+  padding: 30px 10px 30px 10px;
+  margin: 50px 100px 50px 100px;
+  transition: ease 1s;
+}
+
+.cards:hover {
+  transform: scale(1.01);
+  border: 1px solid orangered;
+}
+
+
+@media screen and (max-width: 700px) {
+  .container, .top-menu, #about-me, #skills, #projects, footer {   
+    flex-direction: wrap;
+  }
+}
+
+#submit {
+  border-radius: 5px;
+  border: none;
+  background-color: salmon;
+  padding: 4px 20px 4px 20px;
+  color: whitesmoke;
+  font-weight: bold;
+  margin: 20px 50px 20px 320px;
+}
+
+#submit:hover {
+  background-color: #c299ff;
+  cursor: pointer;
+  border: 1px solid red;
+  transform: scale(1.01);
+  box-shadow: 1px 1px 6px 2px orangered;
+  color: purple;
+}
+
+#projects {
+  text-align: center;
+  border: 2px solid rgba(255, 255, 255, .2);
+  border-radius: 5px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-family: "Quicksand", sans-serif;
+}
+
+#projects p {
+  color: whitesmoke;
+  font-size: 15px;
+}
+
+#projects h3 {
+  color: whitesmoke;
+}
+
+#skills {
+  display: flex;
+  text-align: center;
+  margin-bottom: 40px;
+  margin-top: 60px;
+  font-family: "Quicksand", sans-serif;
+  color: whitesmoke;
+  justify-content: center;
+}
+
+.skills-tag {
+  flex-direction: wrap;
+  justify-content: space-between;
+  background-color:  rgba(255, 255, 255, .1);
+  color: whitesmoke;
+  font-family: "Quicksand", sans-serif;
+  margin: 20px;
+  padding: 20px;
+  border: 2px solid rgba(255, 255, 255, .2);
+  border-radius: 5px;
+  transition: ease 1s;
+}
+
+
+.skills-tag:hover {
+  backdrop-filter: blur(10px);
+  border: 1px solid white;
+  transform: scale(1.05);
+  box-shadow: 3px 6px 6px 3px orangered;
+}
+
+.skills-tag h3 {
+  color: whitesmoke;
+  font-family: "Quicksand", sans-serif;
+}
+
+#openModal,button {
+  cursor: pointer;
+  border-radius: 30px;
+  border:2px solid rgba(255, 255, 255, .2);
+  padding: 10px 18px 10px 18px;
+  margin-top: 10px;
+  color: whitesmoke;
+  font-weight: bold;
+  background-color:  rgb(127, 11, 215);
+}
+
+#closeModal,button {
+ cursor: pointer;
+  border-radius: 30px;
+  border:2px solid rgba(255, 255, 255, .2);
+  padding: 10px 18px 10px 18px;
+  margin-top: 10px;
+  color: whitesmoke;
+  font-weight: bold;
+  background-color:  rgb(127, 11, 215);
+}
+
+.modal {
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: lightslategray;
+  border-radius: 10px;
+  background-color:rgba(255, 255, 255, .1);
+  transition: all 0.3s ease-in-out;
+  z-index: -1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inner-modal {
+  text-align: center;
+  color: white;
+}
+
+.modal.open {
+  opacity: 1;
+  z-index: 999;
+}
+
+footer {
+  position: static;
+  background-color: rgba(255, 255, 255, .1);
+  border: 2px solid rgba(255, 255, 255, .2);
+  border-radius: 5px;
+  text-align: center;
+  color: whitesmoke;
+  font-family: "Quicksand", sans-serif;
+  font-size: 13px;
+  padding: 60px;
+}
+
+#recommend_btn.close {
+  display: block !important;
+}
+
+#recommend_btn {
+  display: flex;
+   position: fixed;
+  justify-content: center;
+}
