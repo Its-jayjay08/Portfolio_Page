@@ -9,3 +9,13 @@ openBtn.addEventListener("click", () => {
 closeBtn.addEventListener("click", () => {
     modal.classList.remove("open");
 });
+
+const form = document.getElementById('form');
+const name = document.getElementById('name');
+const email = document.getElementById('email');
+const message = document.getElementById('message');
+
+form.addEventListener('submit', (e) => {
+
+    let errors = []
+})
