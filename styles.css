@@ -16,6 +16,7 @@
   backdrop-filter: blur(8px);
 }
 
+
 button {
   border: none;
   border-radius: 8px;
@@ -42,6 +43,10 @@ body {
   text-decoration: none;
   margin-left: 35px;
   border-bottom: 2px solid transparent;
+}
+
+.topmenu button {
+  padding: 10px 2px 10px 2px;
 }
 
 a {
@@ -227,6 +232,7 @@ p {
     flex-direction: wrap;
   }
 }
+
 
 @keyframes appear {
   from {
