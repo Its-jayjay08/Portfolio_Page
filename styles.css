@@ -275,10 +275,9 @@ p {
 
 @media screen and (max-width: 940px) {
   .container, .top-menu, #about-me, #projects, #skills, .skills-tag, footer, .block, .top-menu, 
-  .bt, button {   
+  .bt, button, .dropdown {   
     flex-direction: column;
     box-sizing: border-box;
-    font-size: small;
   }
 }
 
