@@ -287,8 +287,14 @@ p {
 }
 
 @media (max-width: 940px) {
-  .topmenu, #profil {
+  .topmenu {
     flex-direction: row;
+  }
+}
+
+@media (max-width: 940px) {
+  .dropdown .topic {
+    display: table-column;
   }
 }
 
