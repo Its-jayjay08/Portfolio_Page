@@ -274,7 +274,7 @@ p {
 
 
 @media screen and (max-width: 940px) {
-  .container, .top-menu, #about-me, #projects, #skills, .skills-tag, footer, .block, .top-menu, 
+  .container, .topmenu, #about-me, #projects, #skills, .skills-tag, footer, .block, .top-menu, 
   .bt, button, .dropdown {   
     flex-direction: column;
     box-sizing: border-box;
@@ -286,6 +286,9 @@ p {
     flex-direction: column;
     box-sizing: border-box;
   }
+}
+
+@media screen and (max-width: 940px) {
 }
 
 @media (min-width: 300px) {
