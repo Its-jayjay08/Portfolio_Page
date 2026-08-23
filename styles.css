@@ -274,7 +274,7 @@ p {
 
 
 @media screen and (max-width: 940px) {
-  .container, .topmenu, #about-me, #projects, #skills, .skills-tag, footer, .block, .top-menu, 
+  .container, #about-me, #projects, #skills, .skills-tag, footer, .block, .top-menu, 
   .bt, button, .dropdown {   
     flex-direction: column;
     box-sizing: border-box;
@@ -288,7 +288,19 @@ p {
   }
 }
 
-@media screen and (max-width: 940px) {
+@media (max-width: 940px) {
+  .topmenu {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 2px;
+    margin: 2px;
+  }
+}
+
+@media (min-width: 300px) {
+  .topmenu {
+    padding: 5px;
+  }
 }
 
 @media (min-width: 300px) {
