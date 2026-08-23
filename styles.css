@@ -272,7 +272,7 @@ p {
 
 
 @media screen and (max-width: 940px) {
-  .container, #about-me, #projects, .topmenu, #skills, .skills-tag, footer, .block, .top-menu, 
+  .container, #about-me, #projects, #skills, .skills-tag, footer, .block, 
   .bt, button, .dropdown {   
     flex-direction: column;
     box-sizing: border-box;
@@ -287,9 +287,8 @@ p {
 }
 
 @media (max-width: 940px) {
-  .topmenu {
-    padding: 2px;
-    margin: 2px;
+  .topmenu, #profil {
+    flex-direction: row;
   }
 }
 
