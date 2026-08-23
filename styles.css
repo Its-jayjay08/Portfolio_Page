@@ -273,9 +273,16 @@ p {
 }
 
 
-@media screen and (max-width: 700px) {
-  .container, .top-menu, #about-me, #skills, #projects, footer {   
-    flex-direction: wrap;
+@media screen and (max-width: 940px) {
+  .container, .top-menu, #about-me, #skills, #projects, footer, .block {   
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+}
+
+@media screen and (max-width: 940px) {
+  .block img {
+    flex-direction: column;
     box-sizing: border-box;
   }
 }
