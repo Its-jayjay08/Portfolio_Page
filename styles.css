@@ -294,7 +294,7 @@ p {
 
 @media (max-width: 940px) {
   .dropdown .topic {
-    display: table-column;
+    display: none;
   }
 }
 
