@@ -38,12 +38,10 @@ button:hover {
 }
 
 .dropdown .bt {
-  justify-content: space-between;
   flex-direction: wrap;
   border-radius: 30px;
-  border:2px solid rgba(255, 255, 255, .2);
+  border: 1px solid rgba(255, 255, 255, .2);
   background-color: rgba(255, 255, 255, .1);
-  padding: 10px 18px 10px 18px;
   color: whitesmoke;
   font-weight: bold;
   transition: ease-in 1s;
@@ -274,7 +272,7 @@ p {
 
 
 @media screen and (max-width: 940px) {
-  .container, #about-me, #projects, #skills, .skills-tag, footer, .block, .top-menu, 
+  .container, #about-me, #projects, .topmenu, #skills, .skills-tag, footer, .block, .top-menu, 
   .bt, button, .dropdown {   
     flex-direction: column;
     box-sizing: border-box;
@@ -290,8 +288,6 @@ p {
 
 @media (max-width: 940px) {
   .topmenu {
-    flex-direction: row;
-    flex-wrap: wrap;
     padding: 2px;
     margin: 2px;
   }
