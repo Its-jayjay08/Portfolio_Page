@@ -123,7 +123,7 @@ a:hover {
   background-size:cover;
   position: relative;
   border: 2px solid rgba(255, 255, 255, .2);
-  padding: 100px;
+  padding: 120px;
   margin-top: 150px;
   border-radius: 6px;
   transition: ease 1s;
@@ -292,7 +292,7 @@ p {
   }
 }
 
-@media (max-width: 940px) {
+@media (max-width: 275.98px) {
   .dropdown .topic {
     display: table-column;
   }
@@ -320,6 +320,20 @@ p {
     opacity: 1;
     scale: 1;
   }
+}
+
+p, h1, h2, h3 {
+  animation-name: slideUpAnimation;
+  animation-duration: 1.4s;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: both;
+}
+
+@keyframes slideUpAnimation {
+  0% { transform: translateY(100px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
 }
 
 .view, .block {
