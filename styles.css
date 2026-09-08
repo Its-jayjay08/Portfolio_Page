@@ -292,7 +292,7 @@ p {
   }
 }
 
-@media (max-width: 275.98px) {
+@media (max-width: 450px) {
   .dropdown .topic {
     display: table-column;
   }
