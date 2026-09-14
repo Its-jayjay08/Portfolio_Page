@@ -123,8 +123,8 @@ a:hover {
   background-size:cover;
   position: relative;
   border: 2px solid rgba(255, 255, 255, .2);
-  padding: 150px;
-  margin: 150px 10px 0 10px;
+  padding: 130px;
+  margin: 150px 15px 0 15px;
   border-radius: 8px;
   transition: ease 1s;
   box-sizing: border-box;
@@ -306,12 +306,6 @@ p {
 @media (min-width: 300px) {
   .block, .skills-tag, #about-me {
     box-sizing: border-box;
-  }
-}
-
-@media (min-width: 300px) {
-  #about-me {
-    padding: 140px;
   }
 }
 
