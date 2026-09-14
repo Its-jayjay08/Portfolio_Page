@@ -297,9 +297,10 @@ p {
   }
 }
 
-@media (min-width: 300px) {
+@media (max-width: 400px) {
   .topmenu {
     padding: 5px;
+    display: none;
   }
 }
 
