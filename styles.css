@@ -123,9 +123,9 @@ a:hover {
   background-size:cover;
   position: relative;
   border: 2px solid rgba(255, 255, 255, .2);
-  padding: 120px;
-  margin-top: 150px;
-  border-radius: 6px;
+  padding: 150px;
+  margin: 150px 10px 0 10px;
+  border-radius: 8px;
   transition: ease 1s;
   box-sizing: border-box;
 }
