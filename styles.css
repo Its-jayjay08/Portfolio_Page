@@ -123,7 +123,7 @@ a:hover {
   background-size:cover;
   position: relative;
   border: 2px solid rgba(255, 255, 255, .2);
-  padding: 150px;
+  padding: 130px;
   margin: 150px 10px 0 10px;
   border-radius: 8px;
   transition: ease 1s;
@@ -233,7 +233,6 @@ p {
   margin: 50px 0 50px 0;
 }
 
-
 .recommendation-tag p {
   color: whitesmoke;
   font-family: "Quicksand", sans-serif;
@@ -305,7 +304,7 @@ p {
 }
 
 @media (min-width: 300px) {
-  .block, .skills-tag {
+  .block, .skills-tag, #about-me {
     box-sizing: border-box;
   }
 }
