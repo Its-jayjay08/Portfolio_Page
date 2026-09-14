@@ -309,6 +309,13 @@ p {
   }
 }
 
+@media (max-width: 900px) {
+  #about-me {
+    padding: 80px;
+    margin-top: 200px;
+  }
+}
+
 @keyframes appear {
   from {
     opacity: 0;
